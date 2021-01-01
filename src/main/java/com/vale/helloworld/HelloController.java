@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @GetMapping
+    @GetMapping("/{name}")
     public String greeting(@PathVariable String name){
         return "Hi "+name+", welcome from kubectl";
     }
